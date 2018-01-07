@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: MadFeedbackFormWeb_production
-  username: MadFeedbackFormWeb
-  password: <%= ENV['MADFEEDBACKFORMWEB_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
